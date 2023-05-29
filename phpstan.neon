@@ -3,5 +3,6 @@ parameters:
     paths:
         - src
         - .php-cs-fixer.dist.php
-    bootstrapFiles:
-        - phar://%currentWorkingDirectory%/vendor/php-cs-fixer/shim/php-cs-fixer.phar/vendor/autoload.php
+    scanDirectories:
+        - phar://%currentWorkingDirectory%/vendor/php-cs-fixer/shim/php-cs-fixer.phar/src
+        - phar://%currentWorkingDirectory%/vendor/php-cs-fixer/shim/php-cs-fixer.phar/vendor/symfony/finder
